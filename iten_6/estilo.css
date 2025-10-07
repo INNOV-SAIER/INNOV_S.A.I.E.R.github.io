@@ -1,0 +1,185 @@
+/* Estilos CSS */
+/* Formato de pagina en  general*/
+body{
+    font-family: Arial, helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background: #e8e8e8;
+    text-align: center;
+}    
+/* ENCABEZADO*/
+.header{
+    background-color: #333;
+    color: #0593f1f8;
+    padding: 1em 0;
+}
+/* menu*/
+.menu {
+    font-family: Arial, sans-serif ;
+    list-style: none;
+    background: #092327;
+    width: 100%;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a:hover{
+    background: #ef8354;
+    transform: scale(1.1);
+}
+/* Subtitulo 1*/
+.container {
+    margin: auto;
+    overflow: hidden;
+    padding: 1em 0;
+    text-align: center;
+    color: #0593f1f8;
+    background-image: url('Imagenes/Imagen_1.jpeg'); 
+}
+/* parrafo 1*/
+.parrafo-justificado {
+    width: 500px;  /* Ajusta el ancho del párrafo a 500 píxeles */
+    width: 50%; /* Define el ancho para que el margen automático funcione */
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    background-color: #f5f1f1c4;
+    color: #010c07;
+    font-size: 30px;
+}
+/* Imagen logo */
+.logo {
+    text-align: center;
+}
+.product-image {
+    background-color: #5a5512a1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+/* parrafp 2,3 */
+.contenedor-columnas {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 2px; /* Agrega un espacio de 20px entre las columnas */
+    color: #04c269b0;
+}
+.columna_1 {
+    margin: 20px  70px;
+    background-color: #333333c4;
+    flex: 1; /* Le da a cada columna la misma "flexibilidad" para ocupar el espacio disponible */
+} 
+.columna_2 {
+    margin: 0  70px;
+    background-color: #333333c4;
+    flex: 1; /* Le da a cada columna la misma "flexibilidad" para ocupar el espacio disponible */
+}
+.columna_3 {
+    text-align: center;
+    margin: 0  70px;
+    background-color: #333333c4;
+    flex: 1; /* Le da a cada columna la misma "flexibilidad" para ocupar el espacio disponible */
+}
+/* boton de whasaap */
+.cta-button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 1px 0px;
+    text-decoration: none;
+    padding: 0.8rem 3rem;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 0;
+    position: relative;
+    border: none;
+    outline: none;
+    margin: 25px;
+}
+.cta-button:hover {
+    background-color: #00e67b;
+    color: black;
+    transform: scale(1.2);
+}
+.cta-button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ff6600;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.cta-button::before {
+    content: "";
+    background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(30px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 30px;
+    opacity: 0;
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+.cta-button:hover::before {
+    opacity: 1;
+}
+.cta-button:active:after {
+    background: transparent;
+}
+.cta-button:active {
+    color: #ff6600;
+    font-weight: bold;
+}
+/* pie de pagina*/
+.footer {
+    background-color: #333;
+    color: #e5eef3;
+    text-align: center;
+    padding: 1em 0;
+    
+}
+
+
+
+
+
+
+
+
